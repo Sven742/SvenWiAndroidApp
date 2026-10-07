@@ -18,7 +18,15 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val terug= findViewById<Button>(R.id.button2)
+        val knop= findViewById<Button>(R.id.button18)
+        knop.setOnClickListener {
+            val intent = Intent(this, MainActivity3 ::class.java)
+            startActivity(intent)
+
+
+
+            }
+        val terug= findViewById<Button>(R.id.button3)
         terug.setOnClickListener {
             finish()
         }

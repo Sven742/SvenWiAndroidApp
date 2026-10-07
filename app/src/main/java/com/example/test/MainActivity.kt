@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-        val knop= findViewById<Button>(R.id.button)
+        val knop= findViewById<Button>(R.id.button2)
         knop.setOnClickListener {
          val intent =Intent(this, MainActivity2::class.java)
             startActivity(intent)

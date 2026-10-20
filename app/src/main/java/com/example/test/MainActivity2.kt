@@ -22,9 +22,6 @@ class MainActivity2 : AppCompatActivity() {
         knop.setOnClickListener {
             val intent = Intent(this, MainActivity3 ::class.java)
             startActivity(intent)
-
-
-
             }
         val terug= findViewById<Button>(R.id.button3)
         terug.setOnClickListener {

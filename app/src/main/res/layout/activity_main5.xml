@@ -7,4 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity5">
 
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="375dp"
+        android:layout_height="76dp"
+        android:text="Je bestelling is succesvol afgerond!"
+        android:textSize="12pt"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="29dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

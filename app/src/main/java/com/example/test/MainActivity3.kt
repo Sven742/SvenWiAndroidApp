@@ -18,15 +18,20 @@ class MainActivity3 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val knop= findViewById<Button>(R.id.button4)
+
+        // Aantal ontvangen (wordt niet getoond, alleen doorgegeven)
+        val aantal = intent.getIntExtra("AANTAL", 0)
+
+        val knop = findViewById<Button>(R.id.button4)
         knop.setOnClickListener {
-            val intent = Intent(this, MainActivity4::class.java)
-            startActivity(intent)
+            val volgendeIntent = Intent(this, MainActivity4::class.java)
+            volgendeIntent.putExtra("AANTAL", aantal)
+            startActivity(volgendeIntent)
         }
-        val terug= findViewById<Button>(R.id.button5)
+
+        val terug = findViewById<Button>(R.id.button5)
         terug.setOnClickListener {
             finish()
         }
     }
-
 }

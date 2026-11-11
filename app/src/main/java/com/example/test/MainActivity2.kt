@@ -12,9 +12,9 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        val count = findViewById<TextView>(R.id.Aantal)
+        val count = findViewById<TextView>(R.id.aantal3)
         val btnOmhoog = findViewById<Button>(R.id.button10)
-        val btnOmlaag = findViewById<Button>(R.id.button385)
+        val btnOmlaag = findViewById<Button>(R.id.button19)
         val volgende = findViewById<Button>(R.id.button18)
         val terug = findViewById<Button>(R.id.button3)
         var aantal = 0
